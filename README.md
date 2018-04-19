@@ -1,2 +1,2 @@
-# Pemrograman-Terstruktur
-Tugas Petruk
+#include <iostream>
+#include <string.h>
