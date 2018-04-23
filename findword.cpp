@@ -72,5 +72,30 @@ cout<<"\t\t\t\tGAME MENCARI KATA"<<endl<<endl<<endl;
             }
         }
 
+         for(int c = 0 ; c < 15 ; c++){
+            for(int a=0; a<=(15-pk); a++) {
+                for(int b=a; b<=a+(pk-1); b++) {
+                    if(*(*(Y+b)+c) == kata[m][x]) ada[x] = 1;
+                    else ada[x] = 0;
+                    x++;
+                }
+                for(int k=0; k<pk; k++) {
+                    if(ada[k]==1) {
+                        result = 1;
+                        hasil[m]+=result;
+                    }
+                else {
+                result = 0;
+                    break;
+                    }
+                    if(hasil[m]==pk) {
+                        fix[m]=1;
+                        goto next;
+                    }
+                }
+                hasil[m]=0;
+                x=0;
+            }
+        }
     return 0;
     }
