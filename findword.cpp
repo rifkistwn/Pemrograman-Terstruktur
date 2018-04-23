@@ -125,6 +125,14 @@ cout<<"\t\t\t\tGAME MENCARI KATA"<<endl<<endl<<endl;
                 x=0;
             }
         }
-
+        for(int dr = 14 ; dr >= 0 ; dr--){
+            for(int i=0; i<=(15-pk); i++) {
+            dgnl=-1;
+                for(int j=i; j<=i+(pk-1); j++) {
+                    ++dgnl;
+                    if(*(*(Y+j)+dr-dgnl) == kata[m][x]) ada[x] = 1;
+                    else ada[x] = 0;
+                    x++;
+                }
     return 0;
     }
