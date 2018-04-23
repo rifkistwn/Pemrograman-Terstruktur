@@ -19,7 +19,7 @@ int main() {
     char A14[] = {'p','d','c','r','z','m','s','n','g','r','d','n','r','p','z'};
     char A15[] = {'o','h','n','k','z','w','a','t','e','r','j','g','t','r','a'};
     char *Y[] = {A1,A2,A3,A4,A5,A6,A7,A8,A9,A10,A11,A12,A13,A14,A15};
-
+cout<<"\t\t\t\tGAME MENCARI KATA"<<endl<<endl<<endl;
     for(int a = 0; a<15; a++) {
         for(int b=0; b<15; b++)
         cout<<*(*(Y+a)+b)<<"  ";
@@ -31,7 +31,12 @@ int main() {
             int hasil[jk], fix[jk], panjang[jk] , dgnl;
                 char kata[jk][15];
 
-    
+    cin.ignore();
+    for(int a=0; a<jk; a++) {
+        cout<<a+1<<". ";
+        cin.getline(kata[a], 15);
+        panjang[a]=strlen(kata[a]);
+    }
     
     return 0;
     }
