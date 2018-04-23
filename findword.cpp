@@ -152,6 +152,17 @@ cout<<"\t\t\t\tGAME MENCARI KATA"<<endl<<endl<<endl;
                 x=0;
             }
         }            
-    
+      next:
+        x=0;
+    }
+
+    cout<<endl<<"Hasil kata yang di cari : "<<endl;
+    for(int a=0; a<jk; a++) {
+        if(fix[a]==1)
+        {
+            cout<<a+1<<". Ada"<<endl;
+        }
+        else cout<<a+1<<". Tidak"<<endl;
+    }
     return 0;
     }
