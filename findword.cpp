@@ -134,5 +134,24 @@ cout<<"\t\t\t\tGAME MENCARI KATA"<<endl<<endl<<endl;
                     else ada[x] = 0;
                     x++;
                 }
+     for(int k=0; k<pk; k++) {
+                    if(ada[k]==1) {
+                        result = 1;
+                        hasil[m]+=result;
+                    }
+                else {
+                        result = 0;
+                        break;
+                    }
+                if(hasil[m]==pk) {
+                        fix[m]=1;
+                        goto next;
+                    }
+                }
+                hasil[m]=0;
+                x=0;
+            }
+        }            
+    
     return 0;
     }
