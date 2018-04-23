@@ -25,6 +25,12 @@ int main() {
         cout<<*(*(Y+a)+b)<<"  ";
         cout<<endl;
     }
+    int jk;
+                cout<<endl<<" Jumlah Kata yang ingin dicari : ";
+                cin>>jk;
+            int hasil[jk], fix[jk], panjang[jk] , dgnl;
+                char kata[jk][15];
+
     
     
     return 0;
